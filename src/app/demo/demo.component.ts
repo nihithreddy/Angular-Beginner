@@ -8,12 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class DemoComponent implements OnInit {
 
   message:string = "Welcome from Demo Component";
+  flag:boolean = true;
+  str:string = "Angular 9.0";
+  num1:number = 0;
+  num2:number = 0;
+  res:number = 0;
   constructor() { }
 
   ngOnInit(): void {
   }
-  ButtonOnClick(): void{
-    alert("You Clicked the button");
+
+  ButtonOnClick() {
+    this.flag = !this.flag;
+  }
+
+  onAddClick() {
+    this.res = this.num1 + this.num2;
   }
 
 }

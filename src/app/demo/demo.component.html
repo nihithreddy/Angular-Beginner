@@ -1,3 +1,20 @@
 <p>demo works!</p>
+
 <h1>{{message}}</h1> <!-- Example of String Interpolation -->
+
 <button (click)="ButtonOnClick()">Click Me!</button> <!-- Example of method binding -->
+
+<button [disabled] = "flag">Demo App</button>  <!-- Example of Property Binding -->
+
+<input type="text" [(ngModel)]= "str"/>  <!-- An Example of Two Way Data Binding -->
+
+<h1>{{str}}</h1>
+
+<input #input1 (keydown)="1"> <!-- An Example of Property Binding or Reference Binding-->
+
+<h1>{{input1.value}}</h1>
+
+<input type="number" [(ngModel)] = "num1" />
+<input type="number" [(ngModel)] ="num2" />
+<button (click)="onAddClick()">Add</button>
+{{res}}
